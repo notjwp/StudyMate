@@ -139,11 +139,14 @@ streamlit run app.py
 
 Once started, open the local URL (e.g., http://localhost:8501) in your browser.
 
-**🧑‍💻 Team Members**
-Name	Role	Contribution
-KARRI UDAY	   AI & Backend Integration	LLM pipeline, FAISS retrieval
-JEEVAN W PRAKASH   	Frontend Developer	Streamlit UI & Extra Features
-JAGADEESH C      	Data & Voice Integration	Voice assistant & Pomodoro logic 	QA & Documentation	Sticky Notes, Testing
+## 👥 Team Members
+
+| 👤 *Name* | 🧩 *Role* | 🛠 *Contribution* |
+|-------------|--------------|----------------------|
+| *KARRI UDAY* | 🧠 AI & Backend Integration | Built LLM pipeline, FAISS retrieval, and backend system |
+| *JEEVAN W PRAKASH* | 🎨 Frontend Developer | Developed Streamlit UI and implemented extra AI features |
+| *JAGADEESH C* | 🎤 Data & Voice Integration | Added AI voice assistant and Pomodoro timer |
+| *(QA & Documentation)* | 🧾 Quality Assurance & Docs | Built Sticky Notes feature, tested modules, and handled documentation |
 
 **Conclusion**
 
