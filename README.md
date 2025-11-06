@@ -1,71 +1,153 @@
-📘 StudyMate: An AI-Powered PDF-Based Q&A System for Students
+<div align="center">
 
-> 🚀 Your AI study companion that transforms PDFs into interactive, voice-enabled, and intelligent learning experiences.
+# 📘 StudyMate  
+### 💡 An AI-Powered PDF-Based Q&A System for Students
 
----
+[![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg?logo=python)]()
+[![Streamlit](https://img.shields.io/badge/Streamlit-App-red?logo=streamlit)]()
+[![IBM Watsonx](https://img.shields.io/badge/IBM%20Watsonx-Mixtral--8x7B-blueviolet)]()
+[![FAISS](https://img.shields.io/badge/FAISS-Vector%20Search-orange)]()
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)]()
 
-## 🧠 Project Description
-
-*StudyMate* is an *AI-powered academic assistant* that enables students to interact with their study materials — such as *textbooks, lecture notes, and research papers* — in a *conversational, question-answering format*.  
-
-Instead of passively reading large PDFs or relying on manual searches for specific information, users can *upload one or more PDFs* and *ask natural-language questions*.  
-StudyMate responds with *direct, well-contextualized answers*, grounded and referenced from the uploaded source content.
-
----
-
-## 🎯 Key Objectives / Expected Solutions
-
-1. *Conversational Q&A from Academic PDFs*  
-   Enables students to ask natural-language questions and receive *contextual answers grounded in their own study materials*.
-
-2. *Accurate Text Extraction and Preprocessing*  
-   Efficiently extracts and chunks content from multiple PDFs using *PyMuPDF* for high-quality downstream processing.
-
-3. *Semantic Search Using FAISS and Embeddings*  
-   Retrieves the most relevant text chunks using *SentenceTransformers embeddings* and *FAISS vector search* for precise question matching.
-
-4. *LLM-Based Answer Generation*  
-   Uses *IBM Watsonx’s Mixtral-8x7B-Instruct* model to generate *informative, grounded answers* from retrieved content.
-
-5. *User-Friendly Local Interface*  
-   A clean *Streamlit-based frontend* allows seamless document upload, question input, and visualization of AI-generated results.
+</div>
 
 ---
 
-## ✨ Extra Features (Our Unique Additions)
+## 🧠 Overview
 
-To make StudyMate a *complete learning ecosystem*, we added the following innovative AI-powered tools:
+*StudyMate* is an *AI-powered academic assistant* that allows students to *interact with their study materials* — textbooks, lecture notes, and research papers — in a *conversational Q&A format*.
 
-### 🗣 1. AI Voice Assistant  
-- Reads out answers using a Text-to-Speech engine.  
-- Allows voice-based question input.  
-- Increases accessibility and enables hands-free learning.  
+Instead of scrolling through long PDFs or manually searching for key points, users can simply *upload their documents* and *ask natural-language questions*.  
+StudyMate returns *direct, well-contextualized answers*, referenced from the actual PDF content.
 
-### ⏳ 2. Pomodoro Timer Page  
-- Built-in *Pomodoro productivity tool* to help students manage focused study sessions.  
-- Optional study-break cycles (25/5, 45/10, etc.) integrated into the StudyMate interface.
-
-### 📝 3. Sticky Notes Feature  
-- Lets users *create, edit, and save quick notes* during their study sessions.  
-- Notes are linked to PDF sections or AI answers and persist across sessions.  
-
-### 🤖 4. Smart Trained Chatbot  
-- A *context-aware chatbot* that remembers previous queries within a session.  
-- Enables extended discussion with uploaded study materials, acting like a *personal tutor*.
+> 🎯 *Mission:* To make learning smarter, faster, and interactive using AI-powered context-based understanding.
 
 ---
 
-## 🧩 Architecture Flow
+## 🧩 Core Features
 
-```text
-📂 PDF Upload (User)
-       ↓
+| # | Feature | Description |
+|---|----------|-------------|
+| 🗣 1 | *Conversational Q&A from Academic PDFs* | Ask natural-language questions and receive contextual answers derived directly from your uploaded materials. |
+| 🧾 2 | *Accurate Text Extraction & Preprocessing* | Uses PyMuPDF to extract, clean, and chunk text from multiple PDFs efficiently. |
+| 🔍 3 | *Semantic Search (FAISS + Embeddings)* | Leverages SentenceTransformers embeddings and FAISS to fetch the most relevant text chunks. |
+| 🧠 4 | *LLM-Based Answer Generation* | Employs *IBM Watsonx’s Mixtral-8x7B-Instruct* model for reliable, fact-grounded answer generation. |
+| 🖥 5 | *Streamlit Interface* | User-friendly, local web interface for document upload, question input, and result visualization. |
+
+---
+
+## 🌟 Extended AI Features
+
+We went beyond just Q&A — making StudyMate an *all-in-one learning ecosystem*:
+
+### 🗣 *AI Voice Assistant*
+- Reads out answers aloud with *Text-to-Speech*.  
+- Enables *voice question input* for hands-free learning.  
+- Great for accessibility and auditory learners.
+
+### ⏳ *Pomodoro Timer*
+- Built-in *focus timer* to help students manage study/break intervals.  
+- Encourages productivity using the *Pomodoro Technique* (25/5 cycles).  
+- Integrated session summaries for review after each timer.
+
+### 📝 *Sticky Notes*
+- Add, edit, and save personal notes while studying.  
+- Notes can be linked to specific PDFs or answers and exported later.  
+- Perfect for quick revision or flashcard creation.
+
+### 🤖 *Smart Trained Chatbot*
+- Context-aware chatbot for multi-turn conversations.  
+- Remembers previous questions within the same session.  
+- Acts like a personal *AI tutor* for deeper concept exploration.
+
+---
+
+## ⚙ Tech Stack
+
+| Category | Tools & Libraries |
+|-----------|-------------------|
+| *Language* | Python |
+| *Frontend* | Streamlit |
+| *AI Model / LLM* | IBM Watsonx – Mixtral-8x7B-Instruct |
+| *Vector Search* | FAISS |
+| *Embeddings* | SentenceTransformers |
+| *PDF Processing* | PyMuPDF |
+| *Voice Assistant* | gTTS / SpeechRecognition |
+| *Additional Libraries* | HuggingFace Transformers, NumPy, Pandas |
+
+---
+
+## 🧠 Architecture Flow
+
+
+📂 PDF Upload (Streamlit UI)
+        ↓
 🧾 Text Extraction & Chunking (PyMuPDF)
-       ↓
-🔍 Embedding Generation (SentenceTransformers)
-       ↓
-🧠 Semantic Search & Indexing (FAISS)
-       ↓
+        ↓
+🔢 Embedding Generation (SentenceTransformers)
+        ↓
+🔍 Semantic Search & Indexing (FAISS)
+        ↓
 🤖 Answer Generation (IBM Watsonx Mixtral-8x7B)
-       ↓
-💬 Streamlit UI → Display Answers + Voice Output + Notes
+        ↓
+💬 Output on Streamlit → Voice, Notes, Chatbot
+
+🔍 How It Works — Step by Step
+
+Upload PDFs via the Streamlit web interface.
+
+Extract and preprocess text from PDFs using PyMuPDF.
+
+Convert chunks into embeddings using SentenceTransformers.
+
+Retrieve top-K relevant passages using FAISS similarity search.
+
+Feed retrieved text + question into the LLM (IBM Watsonx Mixtral-8x7B) for contextual answer generation.
+
+Display and interact with the answer: listen via voice, take notes, or continue the chat.
+
+**🌍 Why StudyMate is Unique**
+
+🧭 Contextual & Grounded — Answers come only from uploaded PDFs, ensuring accuracy.
+
+🧠 Integrated Productivity Suite — Includes timer, notes, and chatbot tools.
+
+⚡ Lightweight and Local — No dependency on cloud storage for document data.
+
+🔒 Privacy-first — Users’ study material never leaves the local environment.
+
+💬 Human-like interaction — AI assistant that learns from the conversation flow.
+
+**🔮 Future Enhancements**
+Phase	Upcoming Features
+Next Release	Cross-document reasoning, automatic quiz generation
+Mid-Term	Personalized learning profiles & progress tracking
+Future Scope	Integration with Learning Management Systems (LMS), AI-based tutoring dashboard, cloud sync & analytics
+
+
+**💻 Installation & Setup**
+# Clone the repository
+git clone https://github.com/your-username/StudyMate.git
+cd StudyMate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the application
+streamlit run app.py
+
+
+Once started, open the local URL (e.g., http://localhost:8501) in your browser.
+
+**🧑‍💻 Team Members**
+Name	Role	Contribution
+KARRI UDAY	   AI & Backend Integration	LLM pipeline, FAISS retrieval
+JEEVAN W PRAKASH   	Frontend Developer	Streamlit UI & Extra Features
+JAGADEESH C      	Data & Voice Integration	Voice assistant & Pomodoro logic 	QA & Documentation	Sticky Notes, Testing
+
+**Conclusion**
+
+StudyMate isn’t just another chatbot — it’s a personalized AI study companion.
+By combining context-grounded Q&A, voice interaction, and productivity tools, it makes studying more efficient, interactive, and fun.
+
+📚 “Study smarter, not harder — with StudyMate.”
