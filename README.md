@@ -4,7 +4,6 @@
 ### 💡 An AI-Powered PDF-Based Q&A System for Students
 
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg?logo=python)]()
-[![Streamlit](https://img.shields.io/badge/Streamlit-App-red?logo=streamlit)]()
 [![IBM Watsonx](https://img.shields.io/badge/IBM%20Watsonx-Mixtral--8x7B-blueviolet)]()
 [![FAISS](https://img.shields.io/badge/FAISS-Vector%20Search-orange)]()
 
@@ -67,7 +66,7 @@ We went beyond just Q&A — making StudyMate an *all-in-one learning ecosystem*:
 | Category | Tools & Libraries |
 |-----------|-------------------|
 | *Language* | Python |
-| *Frontend* | Streamlit |
+| *Frontend* | tsx|
 | *AI Model / LLM* | IBM Watsonx – Mixtral-8x7B-Instruct |
 | *Vector Search* | FAISS |
 | *Embeddings* | SentenceTransformers |
