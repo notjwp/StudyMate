@@ -78,23 +78,51 @@ We went beyond just Q&A — making StudyMate an *all-in-one learning ecosystem*:
 
 ## 🧠 Architecture Flow
 
+![WhatsApp Image 2025-11-06 at 13 22 09_9115972e](https://github.com/user-attachments/assets/e451af61-99a6-4c4f-bf5d-9a4508efccc2)
 
-📂 PDF Upload (Streamlit UI)
 
-        ↓
-🧾 Text Extraction & Chunking (PyMuPDF)
 
-        ↓
-🔢 Embedding Generation (SentenceTransformers)
+## 🧠 Architecture Flow
 
-        ↓
-🔍 Semantic Search & Indexing (FAISS)
+Below is the end-to-end pipeline of *StudyMate*, illustrating how a student’s query moves through the system:
 
-        ↓
-🤖 Answer Generation (IBM Watsonx Mixtral-8x7B)
+
+📂 1️⃣ PDF Upload (Streamlit UI)
+   └─ User uploads one or multiple academic PDFs through the interactive Streamlit interface.
 
         ↓
-💬 Output on Streamlit → Voice, Notes, Chatbot
+
+🧾 2️⃣ Text Extraction & Chunking (PyMuPDF)
+   └─ Extracts clean, readable text from each PDF.
+      Long passages are intelligently chunked into manageable sections for context retention.
+
+        ↓
+
+🔢 3️⃣ Embedding Generation (SentenceTransformers)
+   └─ Each text chunk is converted into high-dimensional vectors (embeddings)
+      that represent semantic meaning for efficient retrieval.
+
+        ↓
+
+🔍 4️⃣ Semantic Search & Indexing (FAISS)
+   └─ All embeddings are stored in a FAISS vector index.
+      When a question is asked, FAISS retrieves the top relevant chunks based on vector similarity.
+
+        ↓
+
+🤖 5️⃣ Answer Generation (IBM Watsonx Mixtral-8x7B)
+   └─ The retrieved content and user query are sent to the LLM.
+      The model generates a fact-grounded, well-contextualized answer from the source material.
+
+        ↓
+
+💬 6️⃣ Output & Interaction Layer (Streamlit)
+   └─ The AI-generated answer is displayed along with:
+        • 🗣 Voice Assistant (Read answers aloud)
+        • 📝 Sticky Notes (Save important points)
+        • ⏳ Pomodoro Timer (Stay focused)
+        • 🤖 Smart Chatbot (Ask follow-up questions)
+
 
 
 **🔍 How It Works — Step by Step**
@@ -110,6 +138,7 @@ Retrieve top-K relevant passages using FAISS similarity search.
 Feed retrieved text + question into the LLM (IBM Watsonx Mixtral-8x7B) for contextual answer generation.
 
 Display and interact with the answer: listen via voice, take notes, or continue the chat.
+
 
 **🌍 Why StudyMate is Unique**
 
