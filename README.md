@@ -84,7 +84,7 @@ We went beyond just Q&A — making StudyMate an *all-in-one learning ecosystem*:
 
 
 
-##🔍 How It Works — Step by Step
+## 🔍 How It Works — Step by Step
 
 Upload PDFs via the Streamlit web interface.
 
@@ -102,7 +102,7 @@ Display and interact with the answer: listen via voice, take notes, or continue 
 
 
 
-##🌍 Why StudyMate is Unique
+## 🌍 Why StudyMate is Unique
 
 🧭 Contextual & Grounded — Answers come only from uploaded PDFs, ensuring accuracy.
 
