@@ -9,4 +9,3 @@ pytest>=7.3.1
 pytest-cov>=4.1.0
 python-magic>=0.4.27
 tqdm>=4.65.0
-langchain>=0.0.200
