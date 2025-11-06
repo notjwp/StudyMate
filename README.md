@@ -121,7 +121,8 @@ Mid-Term	Personalized learning profiles & progress tracking
 Future Scope	Integration with Learning Management Systems (LMS), AI-based tutoring dashboard, cloud sync & analytics
 
 
-**💻 Installation & Setup**
+## 💻 Installation & Setup
+
 # Clone the repository
 git clone https://github.com/your-username/StudyMate.git
 cd StudyMate
