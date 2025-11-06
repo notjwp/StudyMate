@@ -91,7 +91,8 @@ We went beyond just Q&A — making StudyMate an *all-in-one learning ecosystem*:
         ↓
 💬 Output on Streamlit → Voice, Notes, Chatbot
 
-🔍 How It Works — Step by Step
+
+**🔍 How It Works — Step by Step**
 
 Upload PDFs via the Streamlit web interface.
 
