@@ -7,7 +7,7 @@
 [![Streamlit](https://img.shields.io/badge/Streamlit-App-red?logo=streamlit)]()
 [![IBM Watsonx](https://img.shields.io/badge/IBM%20Watsonx-Mixtral--8x7B-blueviolet)]()
 [![FAISS](https://img.shields.io/badge/FAISS-Vector%20Search-orange)]()
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)]()
+
 
 </div>
 
