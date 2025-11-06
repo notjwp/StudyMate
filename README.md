@@ -125,6 +125,7 @@ Below is the end-to-end pipeline of *StudyMate*, illustrating how a student’s 
 
 
 
+
 **🔍 How It Works — Step by Step**
 
 Upload PDFs via the Streamlit web interface.
@@ -138,6 +139,7 @@ Retrieve top-K relevant passages using FAISS similarity search.
 Feed retrieved text + question into the LLM (IBM Watsonx Mixtral-8x7B) for contextual answer generation.
 
 Display and interact with the answer: listen via voice, take notes, or continue the chat.
+
 
 
 **🌍 Why StudyMate is Unique**
