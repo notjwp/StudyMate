@@ -3,6 +3,7 @@
 # 📘 StudyMate  
 ### 💡 An AI-Powered PDF-Based Q&A System for Students
 
+[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-Visit_Now-brightgreen?style=for-the-badge&logo=vercel)](https://hackathon-gules-three-28.vercel.app/)
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg?logo=python)]()
 [![IBM Watsonx](https://img.shields.io/badge/IBM%20Watsonx-Mixtral--8x7B-blueviolet)]()
 [![FAISS](https://img.shields.io/badge/FAISS-Vector%20Search-orange)]()
