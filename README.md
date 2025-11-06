@@ -82,11 +82,6 @@ We went beyond just Q&A — making StudyMate an *all-in-one learning ecosystem*:
 
 
 
-## 🧠 Architecture Flow
-
-Below is the end-to-end pipeline of *StudyMate*, illustrating how a student’s query moves through the system:
-
-
 
 
 **🔍 How It Works — Step by Step**
