@@ -80,14 +80,19 @@ We went beyond just Q&A — making StudyMate an *all-in-one learning ecosystem*:
 
 
 📂 PDF Upload (Streamlit UI)
+
         ↓
 🧾 Text Extraction & Chunking (PyMuPDF)
+
         ↓
 🔢 Embedding Generation (SentenceTransformers)
+
         ↓
 🔍 Semantic Search & Indexing (FAISS)
+
         ↓
 🤖 Answer Generation (IBM Watsonx Mixtral-8x7B)
+
         ↓
 💬 Output on Streamlit → Voice, Notes, Chatbot
 
