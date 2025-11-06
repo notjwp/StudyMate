@@ -131,7 +131,7 @@ cd StudyMate
 pip install -r requirements.txt
 
 # Run the application
-streamlit run app.py
+
 
 
 Once started, open the local URL (e.g., http://localhost:8501) in your browser.
